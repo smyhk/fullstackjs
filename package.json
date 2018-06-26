@@ -1,49 +1,16 @@
 {
-  "name": "fulljs",
-  "version": "1.0.0",
-  "description": "A MERN learning app",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/smyhk/fulljs.git"
-  },
-  "keywords": [
-    "full-stack",
-    "javascript",
-    "react",
-    "mongodb",
-    "express"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/smyhk/fulljs/issues"
-  },
-  "homepage": "https://github.com/smyhk/fulljs#readme",
+  "name": "fullstackjs",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.3",
-    "json-loader": "^0.5.7",
-    "mongodb": "^3.0.10",
-    "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.5",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "eslint": "^5.0.0",
-    "eslint-plugin-react": "^7.10.0",
-    "webpack": "^4.12.1",
-    "webpack-cli": "^3.0.8"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
