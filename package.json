@@ -12,5 +12,21 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/smyhk/fullstackjs.git"
+  },
+  "keywords": [
+    "full-stack",
+    "javascript",
+    "react",
+    "mongodb",
+    "express"
+  ],
+  "author": "Steve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smyhk/fullstackjs/issues"
   }
 }
