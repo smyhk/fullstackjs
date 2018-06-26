@@ -8,11 +8,11 @@ module.exports = {
     rules: [
       {
         test: /\.json$/,
-        loader: 'json-loader'
+        use: 'json-loader'
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        use: 'babel-loader'
       }
     ]
   }

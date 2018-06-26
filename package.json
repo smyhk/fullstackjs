@@ -2,7 +2,7 @@
   "name": "fulljs",
   "version": "1.0.0",
   "description": "A MERN learning app",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "start": "nodemon --exec babel-node server.js --ignore public/",
@@ -28,6 +28,7 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "json-loader": "^0.5.7",
     "mongodb": "^3.0.10",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
