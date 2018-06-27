@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import ContestPreview from './ContestPreview';
-import data from '../testData';
+import axios from 'axios';
 //import PropTypes from 'prop-types';
 
 class App extends Component {
@@ -11,9 +11,13 @@ class App extends Component {
   };
   componentDidMount() {
     // timers, listeners
-    this.setState({
-      contests : data.contests
-    });
+    axios.get('/api/contests')
+      .then(resp => {
+        this.setState({
+          contests: resp.data.contests
+        });
+      })
+      .catch(console.error);
   }
   componentWillUnmount() {
     // clean timers, listeners
