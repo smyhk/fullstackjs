@@ -32,6 +32,9 @@ class AddBook extends Component {
       },
       refetchQueries: [{ query: getBooksQuery }]
     });
+    // clear form after submit
+    var frm = document.getElementById('add-book');
+    frm.reset();
   }
 
   render() {
