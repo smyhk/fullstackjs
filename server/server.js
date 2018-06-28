@@ -1,8 +1,15 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
+const mongoose = require('mongoose');
 
 const server = express();
+
+// connect to the database
+mongoose.connect('mongodb://steve:passwd@localhost:27017/gql-books');
+mongoose.connection.once('open', () => {
+  console.info('Connected to database...')
+});
 
 // graphql middleware
 server.use('/graphql', graphqlHTTP({
@@ -11,5 +18,5 @@ server.use('/graphql', graphqlHTTP({
 }));
 
 server.listen(4000, () => {
-  console.info('Express server listening on port 4000');
+  console.info('Express server listening on port 4000...');
 })
